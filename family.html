@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Trips – Women's Travel Club Kolkata</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .family-hero {
+      text-align: center;
+      padding: 80px 2rem 60px;
+    }
+    .family-logo { margin-bottom: 2rem; }
+    .family-logo img { height: 80px; width: auto; object-fit: contain; }
+    .family-intro {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+    }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+    .col-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 16px var(--shadow);
+    }
+    .col-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--brown);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .trip-item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+    .trip-item:last-child { border-bottom: none; }
+    .trip-item::before { content: '✈'; color: var(--gold); flex-shrink: 0; font-size: 0.75rem; margin-top: 0.1rem; }
+    .contact-strip {
+      background: rgba(200,150,74,0.08);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+      text-align: center;
+    }
+    .contact-item { display: flex; flex-direction: column; gap: 0.4rem; }
+    .contact-item a {
+      font-weight: 600;
+      color: var(--brown);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    .contact-item a:hover { color: var(--gold-dark); }
+    .contact-item span { font-size: 0.78rem; color: var(--text-light); letter-spacing: 0.08em; text-transform: uppercase; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    @media (max-width: 700px) {
+      .two-col { grid-template-columns: 1fr; }
+      .contact-strip { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="logo.png" alt="Women's Travel Club Kolkata" /></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="previous_tours.html">Previous</a></li>
+      <li><a href="upcoming_tours.html">Upcoming</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="family.html">Family Trips</a></li>
+      <li><a href="payments.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Family Trips</h1>
+  <p class="subtitle">Adventures for the whole family — managed by Jhumur &amp; Manas Nandy</p>
+  <span class="header-rule"></span>
+</div>
+
+<div class="section fade-in">
+  <div class="family-hero" style="padding-top:0;">
+    <div class="family-logo">
+      <img src="famlogo.png" alt="Family Trips from Kolkata" />
+    </div>
+    <p class="family-intro">
+      In response to requests for family tours, we launched <strong>"Family Trips from Kolkata"</strong>, managed by <strong>Jhumur Nandy</strong> and <strong>Manas Nandy</strong>. Upcoming trips are shared here and on our Facebook group. Come travel together — parents, children, grandparents — and make memories that last a lifetime.
+    </p>
+  </div>
+
+  <div class="two-col fade-in">
+    <div class="col-card">
+      <h3>🗓 Upcoming Family Trips</h3>
+      <div class="trip-item">Lakshadweep Family — 10 to 14 December 2025</div>
+      <div class="trip-item">Bhitarkanika — 13 to 16 November 2025</div>
+      <div class="trip-item">Kaziranga National Park — 12 to 16 January 2026</div>
+      <div class="trip-item">Tadoba Tiger Reserve — 22 to 27 February 2026</div>
+    </div>
+    <div class="col-card">
+      <h3>✅ Previous Family Trips</h3>
+      <div class="trip-item">Enchanting Dooars</div>
+      <div class="trip-item">Sri Lanka</div>
+    </div>
+  </div>
+
+  <div class="contact-strip fade-in">
+    <div class="contact-item">
+      <span>Join WhatsApp Group</span>
+      <a href="https://wa.me/9163407717" target="_blank">Text "Family" to 9163407717</a>
+    </div>
+    <div class="contact-item">
+      <span>Or Contact</span>
+      <a href="https://wa.me/9433135550" target="_blank">9433135550</a>
+    </div>
+    <div class="contact-item">
+      <span>Facebook Group</span>
+      <a href="https://www.facebook.com/share/g/15WhLAve8J" target="_blank">Join on Facebook</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <img src="logo.png" alt="WTC Kolkata" />
+        <p>A community of women travellers from Kolkata, exploring offbeat destinations since 2019.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="previous_tours.html">Previous Tours</a></li>
+          <li><a href="upcoming_tours.html">Upcoming Tours</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="family.html">Family Trips</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="tandc.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="payments.html">Payments</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:9163407717">📞 9163407717</a></li>
+          <li><a href="mailto:wtckolkata03@gmail.com">✉️ wtckolkata03@gmail.com</a></li>
+          <li><a href="https://wa.me/qr/R7JCJQOXOACNO1" target="_blank">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Women's Travel Club Kolkata. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

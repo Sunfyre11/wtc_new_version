@@ -1,2 +1,2 @@
-# wtc_new_version
-Experimental Version of WTC Website
+# html-wtc
+Website for Women's Travel Club
